@@ -5,6 +5,7 @@ fn main() {
 
     let x = 10;
     let x = 9;
+
     println!("x is {x}");
 
     let mut y = 20;
@@ -26,8 +27,11 @@ fn main() {
     let _value8:f32 = 54.0;
     let _value9:f64 = 54.0;
 
-    let _value2:u16 = 12;
-    let _value7:usize = 54;
+    let _value10:u16 = 12;
+    let _value11:usize = 54;
+
+    let letter:char = 'A';
+    let flag:bool = true;
 
 
 }
