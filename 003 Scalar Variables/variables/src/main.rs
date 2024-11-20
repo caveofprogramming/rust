@@ -4,7 +4,10 @@ fn main() {
     println!("PI is {PI}");
 
     let x = 10;
-    let x = 9;
+    let x = 9;  // Shadowing
+
+    // Note, can't do this: x = 1.23;
+    // Since x is now an integer type, can't assign non-integer values.
 
     println!("x is {x}");
 
