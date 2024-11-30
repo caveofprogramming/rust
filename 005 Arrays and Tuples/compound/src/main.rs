@@ -1,6 +1,11 @@
 // Rust creator: Graydon Hoare
 
 fn main() {
+
+    /*
+     * ARRAYS
+     */
+
     let mut numbers = [1, 2, 3];
     println!("{:?}", numbers);
     
@@ -16,6 +21,10 @@ fn main() {
     
     let numbers = [7; 3];
     println!("{:?}", numbers);
+
+    /*
+     * TUPLES
+     */
     
     let mut values = ("hello", 7);
     println!("{:?}", values);
