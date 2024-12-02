@@ -1,4 +1,3 @@
-// Rust creator: Graydon Hoare
 
 fn main() {
 
