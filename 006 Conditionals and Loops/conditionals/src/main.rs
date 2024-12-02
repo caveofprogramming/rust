@@ -23,17 +23,17 @@ fn main() {
 
     // For Loop
     for count in 0..3 {
-        print!("{} ", count)
+        print!("{} ", count);
     }
 
     println!();
     for count in 0..=3 {
-        print!("{} ", count)
+        print!("{} ", count);
     }
     
     println!();
     for count in (0..3).rev() {
-        print!("{} ", count)
+        print!("{} ", count);
     }
     
     // While loop
