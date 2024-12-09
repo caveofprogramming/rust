@@ -1,7 +1,7 @@
 /*
  * 1. Every value has an owner
  * 2. There can only be one owner at a time.
- * 3. When the owners goes out of scope, the value will be dropped
+ * 3. When the owner goes out of scope, the value will be dropped
  * 
  * If you have a mutable reference to a value, you can't have any other
  * valid references to it at that point.
