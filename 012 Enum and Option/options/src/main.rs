@@ -1,4 +1,14 @@
 fn main() {
+    let value = Some(99);
+    println!("{value:?}");
+
+    let mut value: Option<String> = Option::None;
+    value = Some(String::from("Greeting"));
+    println!("{value:?}");
+
+
+
+    /*
     #[derive(Debug)]
     enum StarType {
         RedDwarf = 0,
@@ -20,8 +30,9 @@ fn main() {
 
     let value = Some(99);
     println!("{value:?}");
-    
+
     let mut value:Option<String> = None;
     value = Some(String::from("Greeting"));
     println!("{value:?}");
+     */
 }
