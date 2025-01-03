@@ -14,7 +14,7 @@ fn main() {
     let animal: &str = &animals[1];
     println!("{animal}");
 
-    let animal = animals.get(0);
+    let animal:Option<&&str> = animals.get(0);
 
     let dog = if let Some(value) = animal {
         value
