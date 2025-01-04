@@ -5,8 +5,8 @@ fn main() {
     let v:Vec<i32> = Vec::new();
     let s = String::new();
     let text = String::from("Hello");
-
     let mut text = "Hello".to_string();
+
     text.push_str(" to you");
     text.push('!');
     println!("{text}");
@@ -47,4 +47,11 @@ fn main() {
     
     let s4 = format!("{s1} {s2} {s3}");
     println!("{s4}");
+
+    let s1 = "Hello".to_string();
+    let s2 = "to".to_string();
+    let s3 = "you".to_string();
+
+    let s4 = s1 + &s2 + &s3;
+
 }
