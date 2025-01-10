@@ -7,6 +7,8 @@ fn main() {
     people.insert("Sue", 36);
     people.insert("Rita", 72);
 
+    println!("{people:?}");
+
     for (name, age) in &people {
         println!("{name}: {age}");
     }
@@ -37,7 +39,7 @@ fn main() {
 
     people.entry("Bob").and_modify(|age| *age += 100);
     println!("{people:?}");
-    
+
     let age_ethel = people.entry("Ethel").or_insert(0);
     *age_ethel += 20;
     println!("{people:?}");
