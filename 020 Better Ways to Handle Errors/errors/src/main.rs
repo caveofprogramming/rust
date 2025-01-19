@@ -1,8 +1,8 @@
 #![allow(unused)]
 
+use std::fs::File;
 use std::io::Error;
 use std::io::ErrorKind;
-use std::fs::File;
 use std::io::Write;
 
 fn run() -> Result<String, Error> {
@@ -10,7 +10,7 @@ fn run() -> Result<String, Error> {
     //Err(Error::new(ErrorKind::Other, "Something bad happened."))
 }
 
-fn create_file(filename:String)->Result<(), Error> {
+fn create_file(filename: String) -> Result<(), Error> {
     let mut file = File::create(filename)?;
 
     file.write(b"Hello there");
@@ -23,11 +23,11 @@ fn create_file(filename:String)->Result<(), Error> {
 }
 
 fn main() {
-    //let text = run().unwrap();
-    //println!("{text}");
+    let text = run().unwrap();
+    println!("{text}");
 
-    //let text = run().expect("Expected string.");
-    //println!("{text}");
+    let text = run().expect("Expected string.");
+    println!("{text}");
 
     let text = run().unwrap_or_else(|error| {
         println!("{error}");
