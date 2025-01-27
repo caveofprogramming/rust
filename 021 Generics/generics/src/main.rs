@@ -24,7 +24,6 @@ fn main() {
     println!("{}", p1.sum());
 
     let p2 = Point { x: 1.2, y: 2.3 };
-    println!("{p2:?}");
     println!("{}", p2.x());
 
     let p3 = Point::<f32> { x: 1.2, y: 2.3 };
@@ -36,3 +35,4 @@ fn main() {
 fn add<T: std::ops::Add<Output = T>>(x:T, y:T)->T {
     x + y
 }
+
