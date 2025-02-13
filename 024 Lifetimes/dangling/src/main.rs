@@ -6,7 +6,7 @@ fn main() {
     {
         let y = 8;
         x = &y;
-        println!("{x}");
     }
+    println!("{x}");
 
 }
