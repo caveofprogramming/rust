@@ -4,3 +4,4 @@ use numerical::numeric::factorial;
 fn test_factorial6() {
     assert!(factorial(6) == 720);
 }
+

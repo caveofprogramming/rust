@@ -1,5 +1,7 @@
 use numerical::numeric::factorial;
 
 fn main() {
-    println!("{}", factorial(5));
+    println!("{}", factorial(3));
 }
+
+

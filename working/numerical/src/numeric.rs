@@ -1,4 +1,4 @@
-pub fn factorial(n:i32)->i32 {
+pub fn factorial(n:u32)->u32 {
     if n == 0 {
         1
     }
@@ -13,30 +13,31 @@ mod tests {
 
     #[test]
     fn test_factorial1() {
-        assert_eq!(factorial(4), 24, "Factorial 4 should be 24");
+        assert_eq!(factorial(0), 1);
     }
 
     #[test]
     fn test_factorial2() {
-        assert!(factorial(4)==24);
+        assert!(factorial(4) == 24);
     }
 
     #[test]
     #[ignore]
     fn test_factorial3() {
-        assert!(factorial(0)==1);
+        assert!(factorial(5) == 120);
     }
 
     #[test]
-    #[should_panic(expected="massive")]
+    #[should_panic(expected="bad")]
     fn test_factorial4() {
-        assert!(factorial(0)==1);
-        panic!("This is a massive panic");
+        assert!(factorial(5) == 120);
+        panic!("oh no something bad happened");
     }
 
     #[test]
     fn test_factorial5()->Result<(), String> {
-        //Err("Bad result".to_string())
         Ok(())
+        //Err("Gone wrong".to_string())
     }
 }
+
