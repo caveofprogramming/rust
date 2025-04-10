@@ -12,8 +12,7 @@ fn main() {
     println!("{} is {}", args.name, args.age);
 }
 
-fn parse_args(mut args:impl Iterator<Item=String>)->Result<Args, &'static str> {
-
+fn parse_args(mut args: impl Iterator<Item = String>) -> Result<Args, &'static str> {
     args.next();
 
     let name = match args.next() {
@@ -27,11 +26,10 @@ fn parse_args(mut args:impl Iterator<Item=String>)->Result<Args, &'static str> {
         .parse::<u32>()
         .map_err(|_| "Invalid age supplied")?;
 
-    Ok(Args{name, age})
+    Ok(Args { name, age })
 }
 
 struct Args {
     name: String,
     age: u32,
 }
-
